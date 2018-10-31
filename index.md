@@ -13,8 +13,18 @@ layout: default
 ---
 # 뷰포트 (Viewport)
 
+### 트레일러 영상
 {% youtube JRfKDSGoIUw %}
 <br>
+
+### 수상 내역
+
+![Made with Unity Korea Awards '18 - Best Student WINNER'](/assets/images/mwu-best-student-winner-black.png "MWU Korea '18 - Best Student WINNER")
+
+<br>
+
+### 게임 특징
+
 <b>· 뷰포트를 활용한 퍼즐</b>
 
 3D 프로그램의 뷰포트 기능에서 착안한 새로운 퍼즐 방식입니다.<br>
@@ -39,6 +49,7 @@ layout: default
 <b>· 다채로운 스테이지 구성</b>
 
 총 50여 개의 매력적인 퍼즐 스테이지가 구성되어 있으며, 당신의 호기심을 끌만한 이벤트도 중간중간 들어 있습니다.<br>
+<br>
 <br>
 
 ---
