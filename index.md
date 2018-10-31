@@ -14,7 +14,7 @@ layout: default
 # 뷰포트 (Viewport)
 
 ### 트레일러 영상
-{% youtube JRfKDSGoIUw %}
+{% include youtube.html id="JRfKDSGoIUw" %}
 <br>
 
 ### 수상 내역
