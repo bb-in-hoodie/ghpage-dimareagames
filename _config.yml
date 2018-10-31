@@ -3,3 +3,4 @@ description: 당신을 위한 게임을 만드는 곳
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
+baseurl: /ghpage-dimareagames
