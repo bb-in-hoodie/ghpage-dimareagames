@@ -19,7 +19,7 @@ layout: default
 
 ### 수상 내역
 
-![Made with Unity Korea Awards '18 - Best Student WINNER'](/assets/images/mwu-best-student-winner-black.png "MWU Korea '18 - Best Student WINNER")
+![Made with Unity Korea Awards '18 - Best Student WINNER']({{ site.url }}/assets/images/mwu-best-student-winner-black.png "MWU Korea '18 - Best Student WINNER")
 
 <br>
 
