@@ -1,6 +1,10 @@
+# Site settings
 title: DimArea Games
-description: 당신을 위한 게임을 만드는 곳
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-cayman
-baseurl: /ghpage-dimareagames
+description: 누군가에게 꼭 필요한, 하나뿐인 게임
+baseurl: ghpage-dimareagames
+
+# Personal info
+email: pso999@naver.com
+
+# Build settings
+markdown: kramdown

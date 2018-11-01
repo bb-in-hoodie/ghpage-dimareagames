@@ -1,40 +1,14 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "ko" }}">
-  <head>
+<html>
+    
+    {% include /head.html %}
 
-    {% if site.google_analytics %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '{{ site.google_analytics }}');
-      </script>
-    {% endif %}
-    <meta charset="UTF-8">
+	<body id="top">
 
-{% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
+        {{ content }}
 
-    <header class="page-header" role="banner">
-      <h1 class="project-name">DimArea Games</h1>
-      <h2 class="project-tagline">당신을 위한 게임을 만드는 곳</h2>
-        <a href="https://www.youtube.com/channel/UCKStwp2IewjVqHsfivQIM0A" class="btn">유튜브 채널</a>
-        <a href="https://www.facebook.com/DimAreaGames" class="btn">페이스북 페이지</a>
-    </header>
+        {% include /footer.html %}
 
-    <main id="content" class="main-content" role="main">
-      {{ content }}
+    </body>
 
-      <footer class="site-footer">
-        <span class="site-footer-credits">© 2018 DimArea Games. All Rights Reserved.</span>
-      </footer>
-    </main>
-  </body>
 </html>
