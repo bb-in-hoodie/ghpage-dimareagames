@@ -1,9 +1,14 @@
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
 <!-- Header -->
 <header id="header" class="skel-layers-fixed">
     <h1><a href="{{ site.baseurl }}/" class="site-title" >{{ site.title }}</a></h1>
     <nav id="nav">
         <ul>
-            <li><a href="{{ site.baseurl }}/">Home</a></li>
+            <li><a onclick="fnMove('top')">Top</a></li>
+            <li><a onclick="fnMove('2')">Viewport</a></li>
+            <li><a onclick="fnMove('3')">History</a></li>
+            <li><a onclick="fnMove('4')">Company</a></li>
             <!--
             <li><a href="{{ site.baseurl }}/left-sidebar.html">Left Sidebar</a></li>
             <li><a href="{{ site.baseurl }}/right-sidebar.html">Right Sidebar</a></li>
@@ -19,3 +24,13 @@
         </ul>
     </nav>
 </header>
+
+<script>
+    function fnMove(seq){
+        if (seq == 'top')
+            var offset = $("#top").offset();
+        else
+            var offset = $("#section" + seq).offset();
+        $('html, body').animate({scrollTop : offset.top}, 400);
+    }
+</script>
