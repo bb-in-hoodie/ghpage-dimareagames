@@ -49,7 +49,6 @@
 
 	p.description {
 		text-align: center;
-		margin-top: 1em;
 		font-size: 11pt;
 		color: #7c8979;
 	}
@@ -310,6 +309,19 @@
 				width: 100%;
 				padding-bottom: 4%;
 			}
+
+		.image.logo {
+			width: 30%;
+		}
+
+		.image.awards {
+			width: 50%;
+			margin: 4% 0 2% 0;
+		}
+
+		.awards-container {			
+			text-align: center;
+		}
 
 /* List */
 
@@ -680,7 +692,7 @@
 			}
 
 		.wrapper.style2 {
-			background: #272b25;
+			background: #191b19;
 			color: #b2b4b1;
 		}
 
@@ -937,12 +949,10 @@
 		height: 100%;
 	}
 
-	iframe.full-embed {
-		padding-top: 4%;
-		padding-bottom: 1%;
+	.embed-container.full-embed {
+		margin: 6% 0 2% 0;
 	}
 
-	iframe.inner-embed {
-		padding-top: 1%;
-		padding-bottom: 4%;
+	.embed-container.inner-embed {
+		margin: 2% 0 4% 0;
 	}
