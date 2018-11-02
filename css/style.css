@@ -51,6 +51,7 @@
 		text-align: center;
 		font-size: 11pt;
 		color: #7c8979;
+		margin-bottom: 3em;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -300,27 +301,27 @@
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			margin-bottom: 3.4em;
 			width: 100%;
 		}
 
 			.image.fit img {
 				display: block;
 				width: 100%;
-				padding-bottom: 4%;
 			}
 
 		.image.logo {
-			width: 30%;
+			width: 60%;
 		}
 
 		.image.awards {
-			width: 50%;
-			margin: 4% 0 2% 0;
+			width: 80%;
+			margin-bottom: 1em;
 		}
 
 		.awards-container {			
 			text-align: center;
+			margin-bottom: 5em;
 		}
 
 /* List */
@@ -757,6 +758,12 @@
 				font-size: 1.25em;
 			}
 
+				#header h1 a img{
+					vertical-align: middle;
+					height: 60%;
+					padding-bottom: 0.1em;
+				}
+
 		#header nav {
 			height: inherit;
 			line-height: inherit;
@@ -900,6 +907,7 @@
 	#footer {
 		background: #f8f8f8;
 		padding: 4em 0 6em 0;
+		width: 100%;
 	}
 
 		#footer a {
@@ -929,11 +937,13 @@
 				}
 
 		#footer .icons a {
-			color: #bbb;
+			color: #888;
 		}
 
 /* YouTube */
 	.embed-container { 
+		border-radius: 6px;
+		border: 0;
 		position: relative;
 		padding-bottom: 56.25%;
 		height: 0;
@@ -950,9 +960,9 @@
 	}
 
 	.embed-container.full-embed {
-		margin: 6% 0 2% 0;
+		margin: 3em 0 1em 0;
 	}
 
 	.embed-container.inner-embed {
-		margin: 2% 0 4% 0;
+		margin-bottom: 2em;
 	}
