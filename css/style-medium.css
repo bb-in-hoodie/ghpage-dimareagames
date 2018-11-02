@@ -50,28 +50,28 @@
 	}
 
 		#navButton .toggle:before {
-			content: "";
+			content: "\f0c9";
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: 'FontAwesome Solid';
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
 		}
 
 		#navButton .toggle:before {
-			background: rgba(144, 149, 154, 0.75);
-			border-radius: 6px;
+			background: rgba(144, 149, 154, 0.5);
+			border-radius: 14px;
 			color: #fff;
 			display: block;
 			font-size: 17px;
-			height: 2em;
+			height: 2.4em;
 			left: 0.5em;
-			line-height: 2em;
+			line-height: 2.4em;
 			position: absolute;
 			text-align: center;
 			top: 0.5em;
-			width: 3.5em;
+			width: 2.75em;
 		}
 
 	#navPanel {
