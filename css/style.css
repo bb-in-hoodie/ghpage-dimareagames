@@ -988,3 +988,12 @@
 	.embed-container.inner-embed {
 		margin-bottom: 2em;
 	}
+
+/* Privacy Policy */
+	div.privacy {
+		padding: 4em 2em 2em 4em;
+	}
+
+	a.privacy-link {
+		text-decoration: none;
+	}
