@@ -16,3 +16,4 @@ Disallow: /favicon-32x32.png
 Disallow: /LICENSE.txt
 Disallow: /safari-pinned-tab.svg
 Disallow: /site.webmanifest
+Disallow: /privacy.html
