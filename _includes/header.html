@@ -10,20 +10,17 @@
     <nav id="nav">
         <ul>
             <li><a onclick="fnMove('top')">홈</a></li>
-            <li><a onclick="fnMove('2')">뷰포트</a></li>
-            <li><a onclick="fnMove('3')">수상 내역</a></li>
-            <li><a onclick="fnMove('4')">Dev Blog</a></li>
-            <li><a onclick="fnMove('5')">회사 소개</a></li>
+            <li><a onclick="fnMove('viewport')">뷰포트</a></li>
+            <li><a onclick="fnMove('news')">소식</a></li>
+            <li><a onclick="fnMove('devblog')">Dev Blog</a></li>
+            <li><a onclick="fnMove('companyinfo')">회사 소개</a></li>
         </ul>
     </nav>
 </header>
 
 <script>
-    function fnMove(seq){
-        if (seq == 'top')
-            var offset = $("#top").offset();
-        else
-            var offset = $("#section" + seq).offset();
+    function fnMove(sectionid){
+        var offset = $("#" + sectionid).offset();
         $('html, body').animate({scrollTop : offset.top}, 400);
     }
 </script>
