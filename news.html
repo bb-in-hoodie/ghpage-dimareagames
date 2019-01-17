@@ -1,0 +1,33 @@
+---
+layout: news-layout
+---
+
+<!-- Banner -->
+<section id="banner">
+    <div class="inner">
+        <h2>소식</h2>
+    </div>
+</section>
+<section id="news-list" class="post-list">
+    <div class="container">
+        {% for post in site.categories.news %}
+            <div class="{% cycle 'news-preview', 'news-preview' %} row">
+                <div class="4u">
+                    {% if post.thumbnail-img %}
+                        <img src="{{ site.baseurl }}{{ post.thumbnail-img }}" class="image thumbnail"/>
+                    {% else %}
+                        <img src="/images/news-default.png" class="image thumbnail"/>
+                    {% endif %}
+                </div>
+                <div class="8u">
+                    <div class="preview-content">
+                        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                        <p>{{ post.excerpt }}</p>
+                        <a href="{{ site.baseurl }}{{ post.url }}" class="button {% cycle 'alt', 'alt'%}">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="post-preview-hr">
+        {% endfor %}
+    </div>
+</section>

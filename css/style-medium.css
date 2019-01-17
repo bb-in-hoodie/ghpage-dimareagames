@@ -153,3 +153,15 @@ body, input, select, textarea {
 	grid-template-columns: repeat(1, 1fr);
 	grid-auto-rows: minmax(4em, auto);
 }
+
+.post-list {
+	padding: 0.5em 0 2em 0;
+}
+
+.news-preview h2, .news-preview h3, .news-preview h4, .news-preview h5, .news-preview h6 {
+	padding-top: 1.5em;
+}
+
+.preview-content {
+	margin: 0 1em 0 1em;
+}
