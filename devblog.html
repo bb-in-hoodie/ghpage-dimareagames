@@ -1,27 +1,33 @@
 ---
-layout: default
+layout: news-layout
 ---
 
 <!-- Banner -->
 <section id="banner">
     <div class="inner">
-        <h2>My Blog</h2>
+        <h2><a href="{{ site.baseurl }}/devblog.html">DEV BLOG</a></h2>
     </div>
 </section>
-<section id="main" class="wrapper style1">
-    {% for post in site.posts %}
-        <div class="wrapper {% cycle 'style1', 'style2' %}">
-            <header class="major">
-                <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-            </header>
-            <section class="container">
-                {{ post.excerpt }}
-            </section>
-            <section class="special">
-                <ul class="actions">
-                    <li><a href="{{ site.baseurl }}{{ post.url }}" class="button {% cycle '', 'alt'%}">Read More</a></li>
-                </ul>
-            </section>
-        </div>
-    {% endfor %}
+<section id="devblog-list" class="post-list">
+    <div class="container">
+        {% for post in site.categories.devblog %}
+            <div class="news-preview row">
+                <div class="4u">
+                    {% if post.thumbnail-img %}
+                        <img src="{{ site.baseurl }}{{ post.thumbnail-img }}" class="image thumbnail"/>
+                    {% else %}
+                        <img src="/images/devblog-default.png" class="image thumbnail"/>
+                    {% endif %}
+                </div>
+                <div class="8u">
+                    <div class="preview-content">
+                        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                        <p>{{ post.excerpt }}</p>
+                        <a href="{{ site.baseurl }}{{ post.url }}" class="button alt">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="post-preview-hr">
+        {% endfor %}
+    </div>
 </section>

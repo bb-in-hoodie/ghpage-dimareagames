@@ -4,6 +4,8 @@ title:  "devblog1"
 date:   2016-01-01 11:32:24
 categories: devblog
 tags: android
+excerpt: "this would be the excerpt excerpt excerpt excerpt excerpt excerpt<br>and it could be multiple lines"
+thumbnail-img: /images/viewport-story.jpg
 ---
 
 <img src="{{ site.baseurl }}/images/viewport-story.jpg" class="fit image">

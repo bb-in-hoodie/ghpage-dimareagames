@@ -4,6 +4,8 @@ title:  "devblog5"
 date:   2016-05-06 15:32:25
 categories: devblog
 tags: steam
+excerpt: "this would be the excerpt excerpt excerpt excerpt excerpt excerpt<br>and it could be multiple lines"
+thumbnail-img: /images/viewport-story.jpg
 ---
 
 <img src="{{ site.baseurl }}/images/viewport-puzzles.jpg" class="fit image">

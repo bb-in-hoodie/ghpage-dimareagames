@@ -770,6 +770,12 @@ input[type="button"],
 	margin: 0;
 }
 
+.post-content {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 /* Header */
 
@@ -1080,4 +1086,8 @@ a.privacy-link {
 
 .no-bottom-margin {
 	margin-bottom: 0;
+}
+
+.post-container {
+	padding: calc(1.5em + 2.5%) 0 calc(4em + 4%) 0;
 }

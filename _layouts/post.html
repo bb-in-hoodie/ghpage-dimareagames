@@ -1,24 +1,33 @@
 ---
-layout: default
+layout: post-layout
 ---
-<div class="wrapper style1">
-    <article class="container">
+<section id="banner">
+    <div class="inner">
+        <h2>
+            {% if page.categories contains "devblog" %}
+            <a href="{{ site.baseurl }}/devblog.html">DEV BLOG</a>
+            {% else %}
+            <a href="{{ site.baseurl }}/news.html">소식</a>
+            {% endif %}
+        </h2>
+    </div>
+</section>
+<section id="post-section">
+    <article class="container post-container">
         <header class="major">
             <h2 class="post-title">{{ page.title }}</h2>
-                <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+            <p class="post-meta">
+            {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+            </p>
         </header>
 
         <section class="post-content">
             {{ content }}
+            {% if page.categories contains "devblog" %}
+            <a href="{{ site.baseurl }}/devblog.html" class="float-left">&larr; 뒤로가기</a>
+            {% else %}
+            <a href="{{ site.baseurl }}/news.html" class="float-left">&larr; 뒤로가기</a>
+            {% endif %}
         </section>
-        
-        <footer>
-            {% if page.previous %}
-            <a href="{{ page.previous.url }}" class="float-left">&larr; Previous post</a> {% endif %}
-            {% if page.next %}
-            <a href="{{ page.next.url }}" class="float-right">Next post &rarr;</a> {% endif %}
-        </footer>
-
     </article>
-
-</div>
+</section>

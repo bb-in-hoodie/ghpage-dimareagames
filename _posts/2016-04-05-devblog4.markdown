@@ -4,6 +4,8 @@ title:  "devblog4"
 date:   2016-04-05 14:32:24
 categories: devblog
 tags: ios
+excerpt: "this would be the excerpt excerpt excerpt excerpt excerpt excerpt<br>and it could be multiple lines"
+thumbnail-img: /images/viewport-story.jpg
 ---
 
 <img src="{{ site.baseurl }}/images/viewport-puzzles.jpg" class="fit image">

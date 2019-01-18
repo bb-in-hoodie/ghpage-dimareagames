@@ -12,6 +12,10 @@ body, input, select, textarea {
 	font-size: 12pt;
 }
 
+.post-title {
+	margin-bottom: 0.5em;
+}
+
 /* Wrapper */
 
 .wrapper {
@@ -158,8 +162,12 @@ body, input, select, textarea {
 	padding: 0.5em 0 2em 0;
 }
 
+.post-content {
+	width: 100%;
+}
+
 .news-preview h2, .news-preview h3, .news-preview h4, .news-preview h5, .news-preview h6 {
-	padding-top: 1.5em;
+	padding-top: 1.2em;
 }
 
 .preview-content {
