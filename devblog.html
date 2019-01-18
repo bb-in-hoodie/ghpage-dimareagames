@@ -11,7 +11,7 @@ layout: news-layout
 <section id="devblog-list" class="post-list">
     <div class="container">
         {% for post in site.categories.devblog %}
-            <div class="news-preview row">
+            <div class="post-preview row">
                 <div class="4u">
                     {% if post.thumbnail-img %}
                         <img src="{{ site.baseurl }}{{ post.thumbnail-img }}" class="image thumbnail"/>
@@ -22,6 +22,7 @@ layout: news-layout
                 <div class="8u">
                     <div class="preview-content">
                         <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                        {% if post.author %}<h5>by {{ post.author }}</h5>{% endif %}
                         <p>{{ post.excerpt }}</p>
                         <a href="{{ site.baseurl }}{{ post.url }}" class="button alt">자세히 보기</a>
                     </div>

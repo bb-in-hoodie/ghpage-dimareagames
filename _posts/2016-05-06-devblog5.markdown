@@ -2,6 +2,7 @@
 layout: post
 title:  "devblog5"
 date:   2016-05-06 15:32:25
+author: Park, Sung-oh
 categories: devblog
 tags: steam
 excerpt: "this would be the excerpt excerpt excerpt excerpt excerpt excerpt<br>and it could be multiple lines"

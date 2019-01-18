@@ -11,7 +11,7 @@ layout: news-layout
 <section id="news-list" class="post-list">
     <div class="container">
         {% for post in site.categories.news %}
-            <div class="news-preview row">
+            <div class="post-preview row">
                 <div class="4u">
                     {% if post.thumbnail-img %}
                         <img src="{{ site.baseurl }}{{ post.thumbnail-img }}" class="image thumbnail"/>

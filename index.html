@@ -115,31 +115,48 @@ layout: landing-page
 			<section id="news" class="wrapper style1">
 				<div class="container">
 					<header class="major">
-						<h2>소식</h2>
+						<h2><a href="{{ site.baseurl }}/news.html">소식</a></h2>
 					</header>
-					<div class="row">
-						<div class="6u">
-							<div class="embed-container inner-embed">
-								<iframe src="https://www.youtube.com/embed/UgnM_vlnNoU?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+					<div class="card-list">
+						{% for post in site.categories.news limit:4 %}
+							<div class="card-post">
+			                    <a href="{{ site.baseurl }}{{ post.url }}">
+				                    {% if post.thumbnail-img %}
+				                        <img src="{{ site.baseurl }}{{ post.thumbnail-img }}" class="image thumbnail"/>
+				                    {% else %}
+				                        <img src="/images/news-default.png" class="image thumbnail"/>
+				                    {% endif %}
+			                        <h2>{{ post.title }}</h2>
+			                        <p>{{ post.excerpt }}</p>
+		                        </a>
 							</div>
-						</div>
-						<div class="6u">
-							<h3 class="no-space">Unite Seoul 2018 시연</h3>
-							<p>뷰포트(Viewport)가 유니티에서 주관하는 개발자 컨퍼런스인 'Unite Seoul 2018'에서 첫 시연 행사를 가졌습니다. 뷰포트는 Made with Unity Top 27에 선정되어 소중한 시연 자격을 얻을 수 있었습니다. (당시 기준) 1년 넘게 개발하면서 처음으로 게임을 외부에 공개한 자리였습니다. 백여 명의 분들께서 게임을 즐기고 가셨고, 매우 소중한 피드백을 해주셨습니다.</p>
-						</div>
+						{% endfor %}
 					</div>
-					<hr id="devblog">
+					<div class="align-right">
+                    	<a href="{{ site.baseurl }}/news.html" class="button">더 보기</a>
+					</div>
+					<hr id="devblog" class="balanced">
 					<header class="major">
-						<h2>DEV BLOG</h2>
+						<h2><a href="{{ site.baseurl }}/devblog.html">DEV BLOG</a></h2>
 					</header>
-					<div class="row">
-						<div class="6u">
-							<h3 class="no-space">MWU Korea Awards '18 베스트 학생상 수상</h3>
-							<p>뷰포트(Viewport)가 유니티에서 진행하는 Made with Unity Korea Awards '18에서 베스트 학생상을 수상하였습니다. 후보작은 전문 심사위원께서, 수상작은 네티즌 여러분께서 선정하셨습니다. 전문가와 대중에게 고루 좋은 평가를 받았다는 사실은 개발을 이어가는 데 있어 큰 힘이 되었습니다.</p>
-						</div>
-						<div class="6u">
-							<img src="images/viewport-mwu-best-student.jpg" class="image fit" alt="" />
-						</div>
+					<div class="card-list">
+						{% for post in site.categories.devblog limit:4 %}
+							<div class="card-post">
+			                    <a href="{{ site.baseurl }}{{ post.url }}">
+				                    {% if post.thumbnail-img %}
+				                        <img src="{{ site.baseurl }}{{ post.thumbnail-img }}" class="image thumbnail"/>
+				                    {% else %}
+				                        <img src="/images/devblog-default.png" class="image thumbnail"/>
+				                    {% endif %}
+			                        <h2>{{ post.title }}</h2>
+                        			{% if post.author %}<h6>by {{ post.author }}</h6>{% endif %}
+			                        <p>{{ post.excerpt }}</p>
+		                        </a>
+							</div>
+						{% endfor %}
+					</div>
+					<div class="align-right">
+                    	<a href="{{ site.baseurl }}/devblog.html" class="button">더 보기</a>
 					</div>
 				</div>
 			</section>						

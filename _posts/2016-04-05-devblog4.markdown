@@ -2,6 +2,7 @@
 layout: post
 title:  "devblog4"
 date:   2016-04-05 14:32:24
+author: Park, Sung-oh
 categories: devblog
 tags: ios
 excerpt: "this would be the excerpt excerpt excerpt excerpt excerpt excerpt<br>and it could be multiple lines"
