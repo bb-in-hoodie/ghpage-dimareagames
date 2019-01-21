@@ -3,7 +3,7 @@ layout: news-layout
 ---
 
 <!-- Banner -->
-<section id="banner">
+<section id="banner" class="news-banner">
     <div class="inner">
         <h2><a href="{{ site.baseurl }}/news.html">소식</a></h2>
     </div>
@@ -16,7 +16,7 @@ layout: news-layout
                     {% if post.thumbnail-img %}
                         <img src="{{ site.baseurl }}{{ post.thumbnail-img }}" class="image thumbnail"/>
                     {% else %}
-                        <img src="/images/news-default.png" class="image thumbnail"/>
+                        <img src="/images/news-default.jpg" class="image thumbnail"/>
                     {% endif %}
                 </div>
                 <div class="8u">

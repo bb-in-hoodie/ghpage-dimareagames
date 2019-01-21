@@ -770,7 +770,7 @@ input[type="button"],
 	.post-preview p {
 		color: #7c8979;
 		padding-top: 1em;
-		margin-bottom: 2em;
+		margin-bottom: 1.5em;
 	}
 
 	.post-preview .image {
@@ -908,6 +908,14 @@ input[type="button"],
 	position: relative;
 }
 
+	#banner.news-banner {		
+		background-image: url("../images/news-banner.jpg");
+	}
+
+	#banner.devblog-banner {		
+		background-image: url("../images/devblog-banner.jpg");
+	}
+
 	#banner:before {
 		content: '';
 		position: absolute;
@@ -933,6 +941,10 @@ input[type="button"],
 
 	#banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
 		color: #ffffff;
+	}
+
+	#banner.news-banner h2, #banner.news-banner h3, #banner.news-banner h4, #banner.news-banner h5, #banner.news-banner h6 {
+		color: #3E3E3E;
 	}
 
 	#banner .button.alt {
