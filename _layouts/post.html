@@ -1,17 +1,23 @@
 ---
 layout: post-layout
 ---
-<section id="banner">
-    <div class="inner">
-        <h2>
-            {% if page.categories contains "devblog" %}
-            <a href="{{ site.baseurl }}/devblog.html">DEV BLOG</a>
-            {% else %}
-            <a href="{{ site.baseurl }}/news.html">소식</a>
-            {% endif %}
-        </h2>
-    </div>
-</section>
+{% if page.categories contains "devblog" %}
+    <section id="banner" class="devblog-banner">
+        <div class="inner">
+            <h2>
+                <a href="{{ site.baseurl }}/devblog">DEV BLOG</a>
+            </h2>
+        </div>
+    </section>
+{% else %}
+    <section id="banner" class="news-banner">
+        <div class="inner">
+            <h2>
+                <a href="{{ site.baseurl }}/news">소식</a>
+            </h2>
+        </div>
+    </section>
+{% endif %}
 <section id="post-section">
     <article class="container post-container">
         <header class="major">

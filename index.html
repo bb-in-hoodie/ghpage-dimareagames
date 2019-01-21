@@ -115,7 +115,7 @@ layout: landing-page
 			<section id="news" class="wrapper style1">
 				<div class="container">
 					<header class="major">
-						<h2><a href="{{ site.baseurl }}/news.html">소식</a></h2>
+						<h2><a href="{{ site.baseurl }}/news">소식</a></h2>
 					</header>
 					<div class="card-list">
 						{% for post in site.categories.news limit:4 %}
@@ -133,11 +133,11 @@ layout: landing-page
 						{% endfor %}
 					</div>
 					<div class="align-right">
-                    	<a href="{{ site.baseurl }}/news.html" class="button">더 보기</a>
+                    	<a href="{{ site.baseurl }}/news" class="button">더 보기</a>
 					</div>
 					<hr id="devblog" class="balanced">
 					<header class="major">
-						<h2><a href="{{ site.baseurl }}/devblog.html">DEV BLOG</a></h2>
+						<h2><a href="{{ site.baseurl }}/devblog">DEV BLOG</a></h2>
 					</header>
 					<div class="card-list">
 						{% for post in site.categories.devblog limit:4 %}
@@ -156,7 +156,7 @@ layout: landing-page
 						{% endfor %}
 					</div>
 					<div class="align-right">
-                    	<a href="{{ site.baseurl }}/devblog.html" class="button">더 보기</a>
+                    	<a href="{{ site.baseurl }}/devblog" class="button">더 보기</a>
 					</div>
 				</div>
 			</section>						

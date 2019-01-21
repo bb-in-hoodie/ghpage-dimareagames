@@ -1,27 +1,28 @@
 ---
-layout: news-layout
+layout: devblog-layout
 ---
 
 <!-- Banner -->
-<section id="banner" class="news-banner">
+<section id="banner" class="devblog-banner">
     <div class="inner">
-        <h2><a href="{{ site.baseurl }}/news.html">소식</a></h2>
+        <h2><a href="{{ site.baseurl }}/devblog">DEV BLOG</a></h2>
     </div>
 </section>
-<section id="news-list" class="post-list">
+<section id="devblog-list" class="post-list">
     <div class="container">
-        {% for post in site.categories.news %}
+        {% for post in site.categories.devblog %}
             <div class="post-preview row">
                 <div class="4u">
                     {% if post.thumbnail-img %}
                         <img src="{{ site.baseurl }}{{ post.thumbnail-img }}" class="image thumbnail"/>
                     {% else %}
-                        <img src="/images/news-default.jpg" class="image thumbnail"/>
+                        <img src="/images/devblog-default.jpg" class="image thumbnail"/>
                     {% endif %}
                 </div>
                 <div class="8u">
                     <div class="preview-content">
                         <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+                        {% if post.author %}<h5>by {{ post.author }}</h5>{% endif %}
                         <p>{{ post.excerpt }}</p>
                         <a href="{{ site.baseurl }}{{ post.url }}" class="button alt">자세히 보기</a>
                     </div>

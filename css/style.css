@@ -1019,6 +1019,10 @@ input[type="button"],
 				padding-left: 0;
 			}
 
+			#footer .copyright p {
+				margin: 0;
+			}
+
 	#footer .icons a {
 		color: #888;
 	}

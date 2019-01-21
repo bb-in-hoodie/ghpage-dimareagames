@@ -4,14 +4,15 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <head>    
-    <title>개인 정보 처리 방침 - {{ site.title }}</title>
+    <title>{{ page.title }} | {{ site.title }}</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="인디게임 뷰포트 개발사 딤에어리어 게임즈 공식 홈페이지" />
+    <meta name="description" content="{{ page.excerpt }}" />
     <meta name="keywords" content="" />
     
     <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
     <script src="{{ site.url }}/js/jquery.min.js"></script>
     <script src="{{ site.url }}/js/skel.min.js"></script>
+    <script src="{{ site.url }}/js/skel-layers.min.js"></script>
     <script src="{{ site.url }}/js/init.js"></script>
     <noscript>
         <link rel="stylesheet" href="{{ site.url }}/css/skel.css" />
@@ -30,8 +31,12 @@
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="DimArea Games">
-    <meta property="og:description" content="인디게임 뷰포트 개발사 딤에어리어 게임즈 공식 홈페이지">
-    <meta property="og:image" content="{{ site.url }}/siteicon.jpg">
+    <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+    <meta property="og:description" content="{{ page.excerpt }}">
+    {% if page.thumbnail-img %}
+        <meta property="og:image" content="{{ page.thumbnail-img }}">
+    {% else %}
+        <meta property="og:image" content="/images/devblog-default.jpg">
+    {% endif %}
     <meta property="og:url" content="{{ site.url }}">
 </head>
