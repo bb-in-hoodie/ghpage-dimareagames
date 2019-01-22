@@ -126,7 +126,7 @@ layout: landing-page
 				                    {% else %}
 				                        <img src="/images/news-default.jpg" class="image thumbnail"/>
 				                    {% endif %}
-			                        <h2>{{ post.title }}</h2>
+			                        <h3 class="no-space">{{ post.title }}</h3>
 			                        <p>{{ post.excerpt }}</p>
 		                        </a>
 							</div>
@@ -148,8 +148,8 @@ layout: landing-page
 				                    {% else %}
 				                        <img src="/images/devblog-default.jpg" class="image thumbnail"/>
 				                    {% endif %}
-			                        <h2>{{ post.title }}</h2>
-                        			{% if post.author %}<h6>by {{ post.author }}</h6>{% endif %}
+			                        <h3 class="no-space">{{ post.title }}</h3>
+                        			{% if post.author %}<h6 class="no-space">by {{ post.author }}</h6>{% endif %}
 			                        <p>{{ post.excerpt }}</p>
 		                        </a>
 							</div>

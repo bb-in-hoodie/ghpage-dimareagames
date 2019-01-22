@@ -8,3 +8,4 @@ email: pso999@naver.com
 
 # Build settings
 markdown: kramdown
+timezone: Asia/Seoul

@@ -78,7 +78,7 @@ h3 {
 	line-height: 1.5em;
 }
 
-	h3.no-space {
+	h1.no-space, h2.no-space, h3.no-space, h4.no-space, h5.no-space, h6.no-space {
 		letter-spacing: 0.0em;
 	}
 
@@ -216,7 +216,7 @@ header.major {
 	}
 
 	header.major h2 + p {
-		font-size: 1.5em;
+		font-size: 1em;
 		margin: -1em 0 2em 0;
 	}
 
@@ -332,6 +332,19 @@ header.major {
 			display: block;
 			width: 100%;
 		}
+
+	.image.half {
+		display: block;
+		margin-bottom: calc(1.5em + 3.5%);
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+
+	.image.on-post {
+		margin-top: calc(1em + 3%);
+		margin-bottom: calc(1em + 3%);
+	}
 
 	.image.logo {
 		width: 60%;
@@ -783,7 +796,7 @@ input[type="button"],
 }
 
 .post-content {
-	width: 80%;
+	width: 76%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -1000,7 +1013,7 @@ input[type="button"],
 	#footer .copyright {
 		color: #bbb;
 		font-size: 0.9em;
-		margin: 2em 0 0 0;
+		margin: 0.2em 0 0 0;
 		padding: 0;
 		text-align: center;
 	}
@@ -1144,12 +1157,14 @@ a.privacy-link {
 	}
 
 	.style1 .card-post h6 {
+		margin-top: 0.2em;
 		margin-bottom: 0em;
 		color: #4d9c45;
 	}
 
 	.card-post p {
 		color: #565e54;
-		padding-top: 1em;
+		padding-top: 1.1em;
 		margin-bottom: 0;
+		font-size: 11pt;
 	}
