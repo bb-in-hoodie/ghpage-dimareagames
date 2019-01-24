@@ -4,7 +4,7 @@ title:  "뷰포트, 2018 인디터 어워즈 3위 수상"
 date:   2018-12-15 18:30:00
 categories: news
 tags: [viewport, awards]
-excerpt: "딤에어리어 게임즈의 뷰포트(Viewport)가 2018 인디터 어워즈에서 3위를 수상하였습니다."
+excerpt: "2018년 12월 15일, 딤에어리어 게임즈의 뷰포트(Viewport)가 2018 인디터 어워즈에서 3위를 수상하였습니다."
 thumbnail-img: /posts/181215-indietuh-awards/KakaoTalk_20181231_135935689.jpg
 ---
 

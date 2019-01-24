@@ -185,12 +185,12 @@ body, input, select, textarea {
 
 .card-list {
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 1em;
+	grid-gap: 0.6em;
 	padding-top: 1em;
 }
 
 .card-post {
-	padding: 1.2em 1em;
+	padding: 0.8em 0.5em;
 }
 
 	.card-post .thumbnail {
@@ -198,5 +198,5 @@ body, input, select, textarea {
 	}
 
 	.card-post p {
-		padding-top: 0.6em;
+		display: none;
 	}
