@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(fontawesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Roboto:500,400,300");
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500&subset=korean');
 
 /*
 Ion by TEMPLATED
@@ -16,7 +16,7 @@ body {
 
 body, input, select, textarea {
 	color: #565e54;
-	font-family: "Roboto", Helvetica, sans-serif;
+	font-family: 'Noto Sans KR', Helvetica, sans-serif;
 	font-size: 14pt;
 	font-weight: 200;
 	line-height: 1.75em;
@@ -95,6 +95,10 @@ h5 {
 h6 {
 	font-size: 0.7em;
 	line-height: 1.5em;
+}
+
+strong { 
+  font-weight: 500;
 }
 
 sub {
@@ -1157,14 +1161,14 @@ a.privacy-link {
 	}
 
 	.style1 .card-post h6 {
-		margin-top: 0.2em;
+		margin-top: 0.4em;
 		margin-bottom: 0em;
 		color: #4d9c45;
 	}
 
 	.card-post p {
 		color: #565e54;
-		padding-top: 1.1em;
+		padding-top: 1em;
 		margin-bottom: 0;
-		font-size: 11pt;
+		font-size: 12pt;
 	}
