@@ -4,7 +4,6 @@ title:  "유나이트 서울 2018, 뷰포트 시연 행사 현장 스케치"
 date:   2018-05-03 18:30:00
 categories: news
 tags: [viewport, game-show]
-excerpt: "2018년 5월 3일과 4일 양일간 딤에어리어 게임즈의 뷰포트(Viewport)가 유나이트 서울 2018 (Unite Seoul 2018)에서 시연 행사를 가졌습니다."
 thumbnail-img: /posts/180503-unite-seoul/20180502_193303.jpg
 ---
 

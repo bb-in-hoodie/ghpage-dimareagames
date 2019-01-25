@@ -4,7 +4,6 @@ title:  "미스터리 퍼즐 게임 뷰포트, 안드로이드 버전 출시"
 date:   2018-11-14 10:30:00
 categories: news
 tags: [viewport, android]
-excerpt: "2018년 11월 14일, 미스터리 퍼즐 게임 뷰포트(Viewport)가 구글 플레이에 선출시 되었습니다."
 thumbnail-img: /posts/181114-android_launching/graphic-image-kr_awards.png
 ---
 

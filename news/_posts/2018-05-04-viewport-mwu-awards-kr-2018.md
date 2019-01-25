@@ -4,7 +4,6 @@ title:  "뷰포트, MWU Awards Korea 2018 베스트 학생상 수상"
 date:   2018-05-04 18:30:00
 categories: news
 tags: [viewport, awards]
-excerpt: "2018년 5월 4일, 딤에어리어 게임즈의 뷰포트(Viewport)가 Made with Unity Korea Awards 2018에서 베스트 학생상을 수상하였습니다."
 thumbnail-img: /posts/180504-mwu-awards/20180504_100752.jpg
 ---
 

@@ -129,7 +129,7 @@ layout: landing-page
 					                    {% endif %}
 					                </div>		
 			                        <h3 class="no-space">{{ post.title }}</h3>
-			                        <p>{{ post.excerpt }}</p>
+			                        <p>{{ post.content | strip_html }}</p>
 		                        </a>
 							</div>
 						{% endfor %}
@@ -154,7 +154,7 @@ layout: landing-page
 					                </div>
 			                        <h3 class="no-space">{{ post.title }}</h3>
                         			{% if post.author %}<h6 class="no-space">by {{ post.author }}</h6>{% endif %}
-			                        <p>{{ post.excerpt }}</p>
+			                        <p>{{ post.content | strip_html }}</p>
 		                        </a>
 							</div>
 						{% endfor %}
