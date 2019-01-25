@@ -1037,6 +1037,11 @@ input[type="button"],
 	margin: 3em 0 calc(2em + 3.5%) 0;
 }
 
+	.embed-container.full-embed.on-post {
+		margin-top: calc(1em + 3%);
+		margin-bottom: calc(1em + 3%);
+	}
+
 .embed-container.inner-embed {
 	margin-bottom: 2em;
 }

@@ -27,7 +27,7 @@ layout: news-layout
                     <div class="preview-content">
                         <a href="{{ site.baseurl }}{{ post.url }}">
                             <h2 class="no-space">{{ post.title }}</h2>
-                            <p>{{ post.excerpt }}</p>
+                            <p>{{ post.content | strip_html }}</p>
                         </a>
                         <a href="{{ site.baseurl }}{{ post.url }}" class="button alt">자세히 보기</a>
                     </div>

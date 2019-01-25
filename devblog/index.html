@@ -28,7 +28,7 @@ layout: devblog-layout
                         <a href="{{ site.baseurl }}{{ post.url }}">
                             <h2 class="no-space on-devblog">{{ post.title }}</h2>
                             {% if post.author %}<h5 class="no-space">&nbsp;by {{ post.author }}</h5>{% endif %}
-                            <p>{{ post.excerpt }}</p>
+                            <p>{{ post.content | strip_html }}</p>
                         </a>
                         <a href="{{ site.baseurl }}{{ post.url }}" class="button alt">자세히 보기</a>
                     </div>

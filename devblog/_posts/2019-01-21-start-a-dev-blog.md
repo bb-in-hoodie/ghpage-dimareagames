@@ -5,7 +5,6 @@ date:   2019-01-21 17:30:00 +09:00
 author: Park, Sung-oh
 categories: devblog
 tags: [web]
-excerpt: "공식적이지만 딱딱하지는 않은 공간, 바로 '개발자 블로그'가 필요하다고 생각했습니다. 그리하여 딤에어리어 게임즈도 공식 Dev Blog를 개설하게 되었습니다."
 thumbnail-img: "/images/devblog-default.jpg"
 ---
 

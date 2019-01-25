@@ -6,8 +6,9 @@ categories: news
 tags: [viewport, android]
 thumbnail-img: /posts/181114-android_launching/graphic-image-kr_awards.png
 ---
-
-<img src="{{ site.baseurl }}/posts/181114-android_launching/graphic-image-kr_awards.png" class="image fit on-post">
+<div class="embed-container full-embed on-post">
+	<iframe src="https://www.youtube.com/embed/JRfKDSGoIUw?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 2018년 11월 14일, 미스터리 퍼즐 게임 뷰포트(Viewport)가 구글 플레이에 선출시 되었습니다.
 
@@ -24,3 +25,5 @@ thumbnail-img: /posts/181114-android_launching/graphic-image-kr_awards.png
 <img src="{{ site.baseurl }}/posts/181114-android_launching/viewport-screenshot-03.png" class="image half on-post">
 
 <img src="{{ site.baseurl }}/posts/181114-android_launching/viewport-screenshot-04.png" class="image half on-post">
+
+<img src="{{ site.baseurl }}/posts/181114-android_launching/graphic-image-kr_awards.png" class="image fit on-post">
