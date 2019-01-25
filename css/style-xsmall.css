@@ -73,3 +73,15 @@ input[type="button"] {
 	#banner .inner {
 		width: 20em;
 	}
+
+
+/* Containers */
+
+	.post-preview .thumbnail-container {
+		height: 12em;
+	}
+
+	.card-post .thumbnail-container {
+		height: 5.5em;
+		margin: 0 0 0.6em 0;
+	}

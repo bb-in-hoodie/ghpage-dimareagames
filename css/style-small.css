@@ -87,3 +87,15 @@ header.major {
 			padding-left: 0;
 			display: block;
 		}
+
+
+/* Containers */
+
+	.post-preview .thumbnail-container {
+		height: 16em;
+	}
+
+	.card-post .thumbnail-container {
+		height: 8em;
+		margin: 0 0 0.6em 0;
+	}

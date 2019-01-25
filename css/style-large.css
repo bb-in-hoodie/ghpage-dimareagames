@@ -31,3 +31,27 @@ body, input, select, textarea {
 #footer {
 	padding: 4em 0;
 }
+
+
+/* Containers */
+
+	.card-post .thumbnail-container {
+		height: 7.15em;
+	}
+
+	.post-preview .thumbnail-container {
+		height: 11.3em;
+	}
+
+	.post-preview h2, .post-preview h3 {
+		padding-top: 0.2em;
+	}
+
+	.post-preview h4, .post-preview h5, .post-preview h6 {
+		padding-top: 0.2em;
+	}
+
+	.post-preview p {
+		padding-top: 0.8em;
+		margin-bottom: 0.8em;
+	}

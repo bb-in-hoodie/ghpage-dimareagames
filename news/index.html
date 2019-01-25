@@ -13,16 +13,22 @@ layout: news-layout
         {% for post in site.categories.news %}
             <div class="post-preview row">
                 <div class="4u">
-                    {% if post.thumbnail-img %}
-                        <img src="{{ site.baseurl }}{{ post.thumbnail-img }}" class="image thumbnail"/>
-                    {% else %}
-                        <img src="/images/news-default.jpg" class="image thumbnail"/>
-                    {% endif %}
+                    <div class="thumbnail-container image">
+                        <a href="{{ site.baseurl }}{{ post.url }}">
+                            {% if post.thumbnail-img %}
+                                <img src="{{ site.baseurl }}{{ post.thumbnail-img }}" class="thumbnail"/>
+                            {% else %}
+                                <img src="/images/news-default.jpg" class="thumbnail"/>
+                            {% endif %}
+                        </a>
+                    </div>
                 </div>
                 <div class="8u">
                     <div class="preview-content">
-                        <h2 class="no-space"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-                        <p>{{ post.excerpt }}</p>
+                        <a href="{{ site.baseurl }}{{ post.url }}">
+                            <h2 class="no-space">{{ post.title }}</h2>
+                            <p>{{ post.excerpt }}</p>
+                        </a>
                         <a href="{{ site.baseurl }}{{ post.url }}" class="button alt">자세히 보기</a>
                     </div>
                 </div>
