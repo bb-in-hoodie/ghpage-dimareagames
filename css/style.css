@@ -748,6 +748,11 @@ input[type="button"],
 		opacity: 0.25;
 	}
 
+	.button.on-post {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
 /* Wrapper */
 
 .wrapper {
@@ -1145,7 +1150,7 @@ a.privacy-link {
 .card-list {
 	text-align: center;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(4, minmax(10em, 1fr));
 	grid-gap: 2em;
 	padding-bottom: 1em;
 }

@@ -31,7 +31,12 @@ layout: post-layout
             {{ content }}
             <div class="align-center">
                 <br>
-                <a onclick="goBack()" class="button alt">뒤로가기</a>
+                <a onclick="goBack()" class="button alt on-post">뒤로가기</a>
+                {% if page.categories contains "devblog" %}
+                    <a href="{{ site.baseurl }}/devblog" class="button alt on-post">목록으로</a>
+                {% else %}
+                    <a href="{{ site.baseurl }}/news" class="button alt on-post">목록으로</a>
+                {% endif %}
             </div>
         </section>
     </article>
