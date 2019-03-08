@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+  {% include /head.html %}
+
+	<body id="top">
+        {% include /header.html %}
+
+        <!-- Banner -->
+        <section id="banner">
+            <div class="inner">
+                <a href="{{ site.url }}" class="site-title">
+                    <img src="images/dimareagames-logo.png" class="image logo" alt="DimArea Games"/>
+                </a>
+                <!--
+                <div class="row">
+                    <div class="4u" style="font-size: 0px">　</div>
+                    <div class="4u">
+                        <a href="{{ site.url }}" class="site-title">
+                            <img src="images/dimareagames-logo.png" class="image logo" alt="DimArea Games"/>
+                        </a>
+                    </div>
+                    <div class="4u" style="font-size: 0px">　</div>
+                </div>
+                -->
+            </div>
+        </section>
+        {{ content }}
+        {% include /footer.html %}
+
+    </body>
+
+</html>

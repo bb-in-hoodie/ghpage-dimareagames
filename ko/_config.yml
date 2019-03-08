@@ -1,0 +1,11 @@
+# Site settings
+title: 딤에어리어 게임즈 (DimArea Games)
+description: 누군가에게 꼭 필요한, 하나뿐인 게임
+baseurl: ''
+
+# Personal info
+email: pso999@naver.com
+
+# Build settings
+markdown: kramdown
+timezone: Asia/Seoul

@@ -1,0 +1,26 @@
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+
+<!-- Header -->
+<header id="header" class="skel-layers-fixed">
+    <h1>
+        <a href="{{ site.baseurl }}" class="site-title">
+            <img src="images/dimareagames-logo-horizontal.png" alt="DimArea Games"/>
+        </a>
+    </h1>
+    <nav id="nav">
+        <ul>
+            <li><a onclick="fnMove('top')">홈</a></li>
+            <li><a onclick="fnMove('viewport')">뷰포트</a></li>
+            <li><a onclick="fnMove('news')">소식</a></li>
+            <li><a onclick="fnMove('devblog')">Dev Blog</a></li>
+            <li><a onclick="fnMove('companyinfo')">팀 소개</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    function fnMove(sectionid){
+        var offset = $("#" + sectionid).offset();
+        $('html, body').animate({scrollTop : offset.top}, 400);
+    }
+</script>
