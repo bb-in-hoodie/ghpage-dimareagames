@@ -124,6 +124,10 @@ body, input, select, textarea {
 					text-decoration: none;
 				}
 
+				#navPanel nav ul li a.lang-sel {
+					color: #fc8eac;
+				}
+
 				#navPanel nav ul li a.button {
 					margin-top: 1em;
 				}

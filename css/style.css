@@ -32,6 +32,10 @@ a {
 		cursor: pointer;
 	}
 
+	a.lang-sel {
+		color: #fc8eac;
+	}
+
 b, .cc-active {
 	font-weight: 500;
 }
@@ -889,8 +893,16 @@ input[type="button"],
 					text-decoration: none;
 				}
 
+				#header nav > ul > li a.lang-sel {
+					color: #fa4375;
+				}
+
 					#header nav > ul > li a:hover {
 						color: #62d162;
+					}
+
+					#header nav > ul > li a.lang-sel:hover {
+						color: #fc8eac;
 					}
 
 				#header nav > ul > li:first-child {
