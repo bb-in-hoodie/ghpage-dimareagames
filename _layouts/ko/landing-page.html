@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 
-  {% include ko/head.html %}
+  {% include {{ site.baseurl_ko }}/head.html %}
 
 	<body id="top">
-        {% include /header.html %}
+        {% include {{ site.baseurl_ko }}/header.html %}
 
         <!-- Banner -->
         <section id="banner">
             <div class="inner">
-                <a href="{{ site.url }}" class="site-title">
+                <a href="{{ site.url }}{{ site.baseurl_ko }}" class="site-title">
                     <img src="images/dimareagames-logo.png" class="image logo" alt="DimArea Games"/>
                 </a>
                 <!--
@@ -26,7 +26,7 @@
             </div>
         </section>
         {{ content }}
-        {% include /footer.html %}
+        {% include {{ site.baseurl_ko }}/footer.html %}
 
     </body>
 

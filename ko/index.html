@@ -5,7 +5,7 @@ layout: ko/landing-page
 		<!-- One -->
 			<section id="philosophy" class="wrapper style1">
 				<header class="major">
-					<h2>{{ site.description }}</h2>
+					<h2>{{ site.description_ko }}</h2>
 					<h3>게임에 대한 철학</h3>
 				</header>
 				<div class="container">
@@ -81,16 +81,16 @@ layout: ko/landing-page
 			<section id="news" class="wrapper style1">
 				<div class="container">
 					<header class="major">
-						<h2><a href="{{ site.baseurl }}/news">소식</a></h2>
+						<h2><a href="{{ site.baseurl_ko }}/news">소식</a></h2>
 					</header>
 					<div class="card-list">
 						{% assign news = site.categories.news | where_exp: "post", "post.categories contains 'ko'" %}
 						{% for post in news limit:4 %}
 							<div class="card-post">
-			                    <a href="{{ site.baseurl }}{{ post.url }}">
+			                    <a href="{{ post.url }}">
 			                    	<div class="image thumbnail-container">
 					                    {% if post.thumbnail-img %}
-					                        <img src="{{ site.baseurl }}{{ post.thumbnail-img }}" class="thumbnail"/>
+					                        <img src="{{ post.thumbnail-img }}" class="thumbnail"/>
 					                    {% else %}
 					                        <img src="/images/news-default.jpg" class="thumbnail"/>
 					                    {% endif %}
@@ -102,20 +102,20 @@ layout: ko/landing-page
 						{% endfor %}
 					</div>
 					<div class="align-right">
-                    	<a href="{{ site.baseurl }}/news" class="button">더 보기</a>
+                    	<a href="{{ site.baseurl_ko }}/news" class="button">더 보기</a>
 					</div>
 					<hr id="devblog" class="balanced">
 					<header class="major">
-						<h2><a href="{{ site.baseurl }}/devblog">DEV BLOG</a></h2>
+						<h2><a href="{{ site.baseurl_ko }}/devblog">DEV BLOG</a></h2>
 					</header>
 					<div class="card-list">
 						{% assign devblog = site.categories.devblog | where_exp: "post", "post.categories contains 'ko'" %}
 						{% for post in devblog limit:4 %}
 							<div class="card-post">
-			                    <a href="{{ site.baseurl }}{{ post.url }}">
+			                    <a href="{{ post.url }}">
 			                    	<div class="image thumbnail-container">
 					                    {% if post.thumbnail-img %}
-					                        <img src="{{ site.baseurl }}{{ post.thumbnail-img }}" class="thumbnail"/>
+					                        <img src="{{ post.thumbnail-img }}" class="thumbnail"/>
 					                    {% else %}
 					                        <img src="/images/devblog-default.jpg" class="thumbnail"/>
 					                    {% endif %}
@@ -128,7 +128,7 @@ layout: ko/landing-page
 						{% endfor %}
 					</div>
 					<div class="align-right">
-                    	<a href="{{ site.baseurl }}/devblog" class="button">더 보기</a>
+                    	<a href="{{ site.baseurl_ko }}/devblog" class="button">더 보기</a>
 					</div>
 				</div>
 			</section>						

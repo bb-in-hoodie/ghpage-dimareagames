@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: ko/post
 title:  "뷰포트, OGN 지랭크 챌린지 서울상 수상"
 date:   2018-12-27 18:30:00
 categories: news

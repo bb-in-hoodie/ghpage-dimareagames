@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: ko/post
 title:  "미스터리 퍼즐 게임 뷰포트, 안드로이드 버전 출시"
 date:   2018-11-14 10:30:00
 categories: news

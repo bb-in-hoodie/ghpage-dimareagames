@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: ko/post
 title:  "유나이트 서울 2018, 뷰포트 시연 행사 현장 스케치"
 date:   2018-05-03 18:30:00
 categories: news

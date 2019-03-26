@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: ko/post
 title:  "뷰포트의 알파, 베타, 그리고 런칭"
 date:   2019-01-28 14:10:00 +09:00
 author: Park, Sung-oh

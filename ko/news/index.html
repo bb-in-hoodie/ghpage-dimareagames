@@ -1,11 +1,11 @@
 ---
-layout: news-layout
+layout: ko/news-layout
 ---
 
 <!-- Banner -->
 <section id="banner" class="news-banner">
     <div class="inner">
-        <h2><a href="{{ site.baseurl }}/news">소식</a></h2>
+        <h2><a href="{{ site.baseurl_ko }}/news">소식</a></h2>
     </div>
 </section>
 <section id="news-list" class="post-list">
@@ -15,9 +15,9 @@ layout: news-layout
             <div class="post-preview row">
                 <div class="4u">
                     <div class="thumbnail-container image">
-                        <a href="{{ site.baseurl }}{{ post.url }}">
+                        <a href="{{ post.url }}">
                             {% if post.thumbnail-img %}
-                                <img src="{{ site.baseurl }}{{ post.thumbnail-img }}" class="thumbnail"/>
+                                <img src="{{ post.thumbnail-img }}" class="thumbnail"/>
                             {% else %}
                                 <img src="/images/news-default.jpg" class="thumbnail"/>
                             {% endif %}
@@ -26,11 +26,11 @@ layout: news-layout
                 </div>
                 <div class="8u">
                     <div class="preview-content">
-                        <a href="{{ site.baseurl }}{{ post.url }}">
+                        <a href="{{ post.url }}">
                             <h2 class="no-space">{{ post.title }}</h2>
                             <p>{{ post.content | strip_html }}</p>
                         </a>
-                        <a href="{{ site.baseurl }}{{ post.url }}" class="button alt">자세히 보기</a>
+                        <a href="{{ post.url }}" class="button alt">자세히 보기</a>
                     </div>
                 </div>
             </div>

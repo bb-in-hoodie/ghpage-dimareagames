@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: ko/post
 title:  "딤에어리어 게임즈의 DevBlog 개설"
 date:   2019-01-21 17:30:00 +09:00
 author: Park, Sung-oh

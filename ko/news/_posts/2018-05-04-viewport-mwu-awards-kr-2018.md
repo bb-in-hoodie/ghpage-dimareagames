@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: ko/post
 title:  "뷰포트, MWU Awards Korea 2018 베스트 학생상 수상"
 date:   2018-05-04 18:30:00
 categories: news

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: ko/post
 title:  "뷰포트, 2018 인디터 어워즈 3위 수상"
 date:   2018-12-15 18:30:00
 categories: news

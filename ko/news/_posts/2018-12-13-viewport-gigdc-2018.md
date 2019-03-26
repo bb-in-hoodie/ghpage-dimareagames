@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: ko/post
 title:  "뷰포트, GIGDC 2018 대학부 동상 수상"
 date:   2018-12-13 18:30:00
 categories: news
