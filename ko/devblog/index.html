@@ -10,7 +10,8 @@ layout: devblog-layout
 </section>
 <section id="devblog-list" class="post-list">
     <div class="container">
-        {% for post in site.categories.devblog %}
+        {% assign devblog = site.categories.devblog | where_exp: "post", "post.categories contains 'ko'" %}
+        {% for post in devblog %}
             <div class="post-preview row">
                 <div class="4u">
                     <div class="thumbnail-container image">

@@ -11,30 +11,32 @@ layout: devblog-layout
 <section id="devblog-list" class="post-list">
     <div class="container">
         {% for post in site.categories.devblog %}
-            <div class="post-preview row">
-                <div class="4u">
-                    <div class="thumbnail-container image">
-                        <a href="{{ site.baseurl }}{{ post.url }}">
-                            {% if post.thumbnail-img %}
-                                <img src="{{ site.baseurl }}{{ post.thumbnail-img }}" class="thumbnail"/>
-                            {% else %}
-                                <img src="/images/devblog-default.jpg" class="thumbnail"/>
-                            {% endif %}
-                        </a>
+            {% unless post.categories contains 'ko' %}
+                <div class="post-preview row">
+                    <div class="4u">
+                        <div class="thumbnail-container image">
+                            <a href="{{ site.baseurl }}{{ post.url }}">
+                                {% if post.thumbnail-img %}
+                                    <img src="{{ site.baseurl }}{{ post.thumbnail-img }}" class="thumbnail"/>
+                                {% else %}
+                                    <img src="/images/devblog-default.jpg" class="thumbnail"/>
+                                {% endif %}
+                            </a>
+                        </div>
+                    </div>
+                    <div class="8u">
+                        <div class="preview-content">
+                            <a href="{{ site.baseurl }}{{ post.url }}">
+                                <h2 class="no-space on-devblog">{{ post.title }}</h2>
+                                {% if post.author %}<h5 class="no-space">&nbsp;by {{ post.author }}</h5>{% endif %}
+                                <p>{{ post.content | strip_html }}</p>
+                            </a>
+                            <a href="{{ site.baseurl }}{{ post.url }}" class="button alt">Read More</a>
+                        </div>
                     </div>
                 </div>
-                <div class="8u">
-                    <div class="preview-content">
-                        <a href="{{ site.baseurl }}{{ post.url }}">
-                            <h2 class="no-space on-devblog">{{ post.title }}</h2>
-                            {% if post.author %}<h5 class="no-space">&nbsp;by {{ post.author }}</h5>{% endif %}
-                            <p>{{ post.content | strip_html }}</p>
-                        </a>
-                        <a href="{{ site.baseurl }}{{ post.url }}" class="button alt">자세히 보기</a>
-                    </div>
-                </div>
-            </div>
-            <hr class="post-preview-hr">
+                <hr class="post-preview-hr">
+            {% endunless %}
         {% endfor %}
     </div>
 </section>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "뷰포트, 2018 인디터 어워즈 3위 수상"
+title:  "Viewport Wins 3rd Place in 2018 Indie-tuh Awards"
 date:   2018-12-15 18:30:00
 categories: news
 tags: [viewport, awards]
@@ -9,11 +9,8 @@ thumbnail-img: /posts/181215-indietuh-awards/KakaoTalk_20181231_135935689.jpg
 
 <img src="{{ site.baseurl }}/posts/181215-indietuh-awards/KakaoTalk_20181231_135935689.jpg" class="image fit on-post">
 
-2018년 12월 15일, 딤에어리어 게임즈의 **뷰포트(Viewport)**가 2018 인디터 어워즈에서 **3위**를 수상하였습니다.
+On December 15, 2018, **Viewport** of DimArea Games won **3rd place** in 2018 Indie-tuh Awards.
 
-[인디터](https://cafe.naver.com/indiedev/)는 '인디게임 개발자 쉼터'의 줄임말로 현재 가장 활발하게 운영되고 있는 국내 인디게임 온라인 커뮤니티입니다.
-2018 인디터 어워즈는 이 인디터에서 처음 진행한 시상식으로, 한국인디게임협회와 인디터가 주최 및 주관한 시상식입니다.
-
-뷰포트는 처음으로 진행된 인디터 어워즈에서 3위를 수상하였습니다.
+[Indie-tuh](https://cafe.naver.com/indiedev/) is short for "Indie Game Developer Shelter" and is currently the most active indie game online community in Korea. 2018 Indie-tuh Awards was the first awards ceremony for Indie-tuh. The awards ceremony was held by the Korean Indie Games Association and Indie-tuh.
 
 <img src="{{ site.baseurl }}/posts/181215-indietuh-awards/KakaoTalk_20181231_135937225.jpg" class="image half on-post">

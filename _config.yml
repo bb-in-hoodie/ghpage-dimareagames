@@ -1,7 +1,12 @@
 # Site settings
-title: 딤에어리어 게임즈 (DimArea Games)
-description: 누군가에게 꼭 필요한, 하나뿐인 게임
+title: DimArea Games
+title_ko: 딤에어리어 게임즈 (DimArea Games)
+description: Unique, Yet Needed
+description_ko: 누군가에게 꼭 필요한, 하나뿐인 게임
+meta-description: Developer of mysterious puzzle game, Viewport.
+meta-description_ko: Developer of mysterious puzzle game, Viewport.
 baseurl: ''
+baseurl_ko: '/ko'
 
 # Personal info
 email: pso999@naver.com

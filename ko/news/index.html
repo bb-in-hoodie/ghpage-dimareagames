@@ -9,8 +9,9 @@ layout: news-layout
     </div>
 </section>
 <section id="news-list" class="post-list">
-    <div class="container">
-        {% for post in site.categories.news %}
+    <div class="container">        
+        {% assign news = site.categories.news | where_exp: "post", "post.categories contains 'ko'" %}
+        {% for post in news %}
             <div class="post-preview row">
                 <div class="4u">
                     <div class="thumbnail-container image">

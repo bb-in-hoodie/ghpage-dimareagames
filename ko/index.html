@@ -1,5 +1,5 @@
 ---
-layout: landing-page
+layout: ko/landing-page
 ---
 
 		<!-- One -->
@@ -9,22 +9,22 @@ layout: landing-page
 					<h3>게임에 대한 철학</h3>
 				</header>
 				<div class="container">
-					<div class="row">
-						<div class="4u">
+					<div class="row flex-on-large-screen">
+						<div class="4u flex-on-large-screen">
 							<section class="special box">
 								<i class="icon fa-lightbulb major"></i>
 								<h3><b>새로움</b></h3>
 								<p>모두가 걸어가는 길을 그대로 따라가지 않습니다. 우리만의 게임을 만드는 것이 우리의 가치를 높이는 일입니다.</p>
 							</section>
 						</div>
-						<div class="4u">
+						<div class="4u flex-on-large-screen">
 							<section class="special box">
 								<i class="icon fa-check major"></i>
 								<h3><b>완성도</b></h3>
 								<p>완성도는 지속적인 감상에 영향을 끼칩니다. 게임의 퀄리티에 대해 높은 기준을 세우고, 그 기준을 충족하는 게임을 만들고자 노력합니다.</p>
 							</section>
 						</div>
-						<div class="4u">
+						<div class="4u flex-on-large-screen">
 							<section class="special box">
 								<i class="icon fa-hands major"></i>
 								<h3><b>책임감</b></h3>
@@ -61,45 +61,11 @@ layout: landing-page
 							</p>
 						</div>
 					</div>
-					<!--
-					<div class="row">
-						<div class="6u" style="margin-bottom: 2em">
-							<section class="special">
-							<img src="images/viewport-puzzles.jpg" class="image fit"/>
-								<h3>뷰포트를 활용한 색다른 퍼즐</h3>
-								<p>
-									3D 프로그램의 뷰포트 기능에서 착안한 새로운 퍼즐 방식입니다.
-								</p>
-							</section>
-						</div>
-						<div class="6u" style="margin-bottom: calc(2em + 1%);">
-							<section class="special">
-							<img src="images/viewport-story.jpg" class="image fit"/>
-								<h3>미스터리한 스토리</h3>
-								<p>
-									플레이어는 정체 모를 실험에 참여한 '피험자 002번'이 됩니다.
-								</p>
-							</section>
-						</div>
-					</div>
-					-->
 					<div class="awards-container">
-						<img src="images/awards/kor/mwu-best-student-winner.png" class="image awards" alt="MWU KR '18 Best Student WINNER"/>
-						<img src="images/awards/kor/g-rank-challenge-seoul.png" class="image awards" alt="G-Rank Challenge Seoul WINNER"/>
-						<img src="images/awards/kor/gigdc-university-bronze.png" class="image awards" alt="2018 GIGDC Univ. Bronze"/>
-						<img src="images/awards/kor/indie-tuh-top3.png" class="image awards" alt="2018 Indie-tuh Awards Top3"/>
-						<!--
-						<div class="row">
-							<div class="2u" style="font-size: 0px">　</div>
-							<div class="8u">								
-								<img src="images/awards/kor/mwu-best-student-winner.png" class="image awards" alt="MWU KR '18 Best Student WINNER"/>
-								<img src="images/awards/kor/g-rank-challenge-seoul.png" class="image awards" alt="G-Rank Challenge Seoul WINNER"/>
-								<img src="images/awards/kor/gigdc-university-bronze.png" class="image awards" alt="2018 GIGDC Univ. Bronze"/>
-								<img src="images/awards/kor/indie-tuh-top3.png" class="image awards" alt="2018 Indie-tuh Awards Top3"/>
-							</div>
-							<div class="2u"></div>
-						</div>	
-						-->	
+						<img src="images/awards/mwu-best-student-winner.png" class="image awards" alt="MWU KR '18 Best Student WINNER"/>
+						<img src="images/awards/g-rank-challenge-seoul.png" class="image awards" alt="G-Rank Challenge Seoul WINNER"/>
+						<img src="images/awards/gigdc-university-bronze.png" class="image awards" alt="2018 GIGDC Univ. Bronze"/>
+						<img src="images/awards/indie-tuh-top3.png" class="image awards" alt="2018 Indie-tuh Awards Top3"/>
 					</div>	
 					<div class="download-btn-container no-bottom-margin">
 						<div>
@@ -118,7 +84,8 @@ layout: landing-page
 						<h2><a href="{{ site.baseurl }}/news">소식</a></h2>
 					</header>
 					<div class="card-list">
-						{% for post in site.categories.news limit:4 %}
+						{% assign news = site.categories.news | where_exp: "post", "post.categories contains 'ko'" %}
+						{% for post in news limit:4 %}
 							<div class="card-post">
 			                    <a href="{{ site.baseurl }}{{ post.url }}">
 			                    	<div class="image thumbnail-container">
@@ -142,7 +109,8 @@ layout: landing-page
 						<h2><a href="{{ site.baseurl }}/devblog">DEV BLOG</a></h2>
 					</header>
 					<div class="card-list">
-						{% for post in site.categories.devblog limit:4 %}
+						{% assign devblog = site.categories.devblog | where_exp: "post", "post.categories contains 'ko'" %}
+						{% for post in devblog limit:4 %}
 							<div class="card-post">
 			                    <a href="{{ site.baseurl }}{{ post.url }}">
 			                    	<div class="image thumbnail-container">

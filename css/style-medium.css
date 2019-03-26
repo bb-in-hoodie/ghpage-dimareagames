@@ -237,3 +237,7 @@ body, input, select, textarea {
 	.card-post p {
 		display: none;
 	}
+	
+.flex-on-large-screen {
+	display: block;
+}
