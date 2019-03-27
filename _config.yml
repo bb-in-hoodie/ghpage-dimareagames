@@ -1,10 +1,13 @@
 # Site settings
 title: DimArea Games
 title_ko: 딤에어리어 게임즈 (DimArea Games)
+
 description: Unique, Yet Needed
 description_ko: 누군가에게 꼭 필요한, 하나뿐인 게임
+
 meta-description: Developer of mysterious puzzle game, Viewport.
-meta-description_ko: Developer of mysterious puzzle game, Viewport.
+meta-description_ko: 미스터리 퍼즐 게임 뷰포트의 개발사 딤에어리어 게임즈입니다.
+
 baseurl: ''
 baseurl_ko: '/ko'
 
