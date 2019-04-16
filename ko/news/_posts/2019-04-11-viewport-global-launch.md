@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: ko/post
 title:  "뷰포트, 구글 플레이 스토어·앱스토어 글로벌 출시"
 date:   2019-04-11 09:00:00
 categories: news
