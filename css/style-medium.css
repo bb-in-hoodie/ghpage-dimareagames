@@ -154,6 +154,16 @@ body, input, select, textarea {
 		max-width: 75%;
 	}
 
+.google-play-store-badge {
+	width: 270px;
+	height: 80px;
+}
+
+.app-store-badge {
+	width: 270px;
+	height: 90px;
+}
+
 /* Containers */
 
 .awards-container {			
@@ -173,7 +183,6 @@ body, input, select, textarea {
 .download-btn-container img {
 	margin-left: auto;
 	margin-right: auto;
-	width: 100%;
 }
 
 .game-description-container {			

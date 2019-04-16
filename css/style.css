@@ -402,6 +402,16 @@ header.major {
 		font-size: 11pt;
 	}
 
+.google-play-store-badge {
+	width: 270px;
+	height: 80px;
+}
+
+.app-store-badge {
+	width: 270px;
+	height: 80px;
+}
+
 /* List */
 
 ol {
@@ -1139,7 +1149,6 @@ a.privacy-link {
 	.download-btn-container img {
 		margin-left: auto;
 		margin-right: auto;
-		width: 20em;
 	}
 
 .game-description-container {			

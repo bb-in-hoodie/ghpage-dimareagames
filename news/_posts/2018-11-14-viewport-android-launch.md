@@ -16,7 +16,7 @@ Viewport is a mobile puzzle game that combines a mysterious storyline as a subje
 
 Currently only available in Google Play Store in Korea, iOS version and global version are aiming to launch in spring 2019.
 
-Viewports are available at [Google Play Store](https://play.google.com/store/apps/details?id=com.dimareagames.viewport).
+Viewport is available at [Google Play Store](https://play.google.com/store/apps/details?id=com.dimareagames.viewport).
 
 <img src="{{ site.baseurl }}/posts/181114-android_launching/viewport-screenshot-01.png" class="image half on-post">
 
